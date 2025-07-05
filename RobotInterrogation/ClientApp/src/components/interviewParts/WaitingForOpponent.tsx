@@ -30,7 +30,7 @@ export const WaitingForOpponent: React.FunctionComponent<IProps> = props => {
 
 
             <P>
-                https://<Link target="_blank" className="gameLink" href={fullLocation}>{fixedLocation}<wbr/><span className="gameLink__focus">{detailLocation}</span></Link>
+                <Link target="_blank" className="gameLink" href={fullLocation}>{fixedLocation}<wbr/><span className="gameLink__focus">{detailLocation}</span></Link>
             </P>
 
             <P>
