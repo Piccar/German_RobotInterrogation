@@ -26,20 +26,20 @@ export const InterviewerInProgress: React.FunctionComponent<IProps> = props => {
     const [elapsed, setElapsed] = useState(false);
     
     const elapsedPrompt = elapsed
-        ? <p>You can ask one final question.</p>
+        ? <p>Du kannst eine letzte Frage stellen.</p>
         : <p/>;
 
     return <Page>
         <PositionHeader position={InterviewPosition.Interviewer} />
-        <P>Ask the Suspect questions and decide whether they are human or a robot.</P>
+        <P>Stelle dem Verdächtigen Fragen und entscheide, ob er ein Mensch oder ein Roboter ist.</P>
 
         <div>
             {questions}
         </div>
 
-        <P>Penalty: {props.penalty}</P>
+        <P>Strafe: {props.penalty}</P>
 
-        <P>Suspect background: {props.suspectBackground}</P>
+        <P>Hintergrund des Verdächtigen: {props.suspectBackground}</P>
 
         <Countdown
             duration={props.duration}
@@ -53,15 +53,16 @@ export const InterviewerInProgress: React.FunctionComponent<IProps> = props => {
                 variant="outlined"
                 onClick={isHuman}
                 disabled={!elapsed}
-                title={elapsed ? undefined : `You can't certify the subject as human until the time has elapsed`}
+                title={elapsed ? undefined : `Du kannst das Subjekt erst als menschlich einstufen, wenn die Zeit abgelaufen ist.`}
             >
-                Suspect is Human
+                Verdächtiger ist ein Mensch
+
             </Button>
             <Button
                 variant="outlined"
                 onClick={isRobot}
             >
-                Suspect is a Robot
+                Verdächtiger ist ein Mensch Roboter
             </Button>
         </ActionSet>
     </Page>

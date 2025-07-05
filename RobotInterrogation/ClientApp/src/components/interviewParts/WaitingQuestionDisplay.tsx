@@ -18,8 +18,8 @@ export const WaitingQuestionDisplay: React.FunctionComponent<IProps> = props => 
             <PositionHeader position={InterviewPosition.Interviewer} />
 
             <P>
-                Waiting for the Suspect to select their <Help entry="background">background</Help>.
-                <br/>Your <Help entry="questions">questions</Help> are as follows:
+                Warte darauf, dass der Verdächtige seinen <Help entry="background">Hintergrund</Help> auswählt.
+                <br/>Deine <Help entry="questions">Fragen</Help> sind wie folgt:
             </P>
 
             <SortableQuestions

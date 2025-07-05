@@ -32,12 +32,13 @@ export const InducerDisplay: React.FunctionComponent<IProps> = props => {
 
             <PacketDisplay packet={props.packet} />
 
-            <Typography>The <Help entry="inducer">inducer</Help> has been administered. Your <Help entry="roles">role</Help>:</Typography>
+            <Typography>Der <Help entry="inducer">Inducer</Help> wurde ausgewählt. Deine <Help entry="roles">Rolle</Help>:</Typography>
             <SuspectRole role={props.role} />
 
             {patternOrSolution}
 
-            <P>Answer the Interviewer's question based on the above diagram.<br/>If you answer correctly, you can choose your <Help entry="background">background</Help>.</P>
+            <P>Beantworte die Frage des Interviewers basierend auf dem obigen Diagramm.<br/>Wenn du richtig antwortest, kannst du deinen <Help entry="background">Hintergrund</Help> auswählen.</P>
+
         </Page>
     )
 }

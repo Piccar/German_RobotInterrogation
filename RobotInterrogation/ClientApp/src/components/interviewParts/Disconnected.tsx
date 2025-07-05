@@ -9,11 +9,11 @@ export const Disconnected: React.FunctionComponent = () => {
     return (
         <Page>
             <Typography variant="h4" gutterBottom />
-            <P>You have disconnected from the interview.</P>
-            <P>Check your internet connection.</P>
+            <P>Du hast die Verbindung zum Interview verlohren.</P>
+            <P>Überprüfe die Internet Verbindung.</P>
 
             <ActionSet>
-                <Button variant="outlined" component={Link} to="/">Go back</Button>
+                <Button variant="outlined" component={Link} to="/">Zurück</Button>
             </ActionSet>
         </Page>
     );

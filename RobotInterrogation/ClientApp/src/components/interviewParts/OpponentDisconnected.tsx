@@ -9,10 +9,10 @@ export const OpponentDisconnected: React.FunctionComponent = () => {
     return (
         <Page>
             <Typography variant="h4" gutterBottom />
-            <P>Your opponent disconnected from the interview.</P>
+            <P>Dein Gegner hat die Verbindung zum Interview getrennt.</P>
 
             <ActionSet>
-                <Button variant="outlined" component={Link} to="/">Go back</Button>
+                <Button variant="outlined" component={Link} to="/">Zurück</Button>
             </ActionSet>
         </Page>
     );

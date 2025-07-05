@@ -23,16 +23,17 @@ export const InducerResponse: React.FunctionComponent<IProps> = props => {
 
             <PacketDisplay packet={props.packet} />
 
-            <P>The <Help entry="inducer">inducer</Help> has been administered.</P>
+            <P>Das <Help entry="inducer">Induktionsmittel</Help> wurde verabreicht.</P>
 
             <InterferenceSolution solution={props.solution} />
 
-            <P>Wait for the Suspect to answer your question, then indicate whether their response is correct. If they are correct, they can choose their <Help entry="background">background</Help>.</P>
+            <P>Warte auf die Antwort des Verdächtigen auf deine Frage und gib dann an, ob seine Antwort korrekt ist. Wenn sie korrekt ist, darf er seinen <Help entry="background">Hintergrund</Help> auswählen.</P>
 
             <ActionSet>
-                <Button variant="outlined" onClick={() => props.correct()}>Correct response</Button>
-                <Button variant="outlined" onClick={() => props.incorrect()}>Incorrect response</Button>
+                <Button variant="outlined" onClick={() => props.correct()}>Korrekte Antwort</Button>
+                <Button variant="outlined" onClick={() => props.incorrect()}>Falsche Antwort</Button>
             </ActionSet>
+
         </Page>
     )
 }

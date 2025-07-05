@@ -16,8 +16,9 @@ interface IProps {
 
 export const SpectatorBackgroundSelection: React.FunctionComponent<IProps> = props => {
     const message = props.options.length === 1
-        ? <P>Suspect answered incorrectly. They can only choose the following <Help entry="background">background</Help>:</P>
-        : <P>Suspect answered correctly. They can choose one of the following <Help entry="background">backgrounds</Help>:</P>
+        ? <P>Der Verdächtige hat falsch geantwortet. Er kann nur aus dem folgenden <Help entry="background">Hintergrund</Help> wählen:</P>
+        : <P>Der Verdächtige hat richtig geantwortet. Er kann einen der folgenden <Help entry="background">Hintergründe</Help> auswählen:</P>
+
 
     const options = props.options.length === 1
         ? (
@@ -31,7 +32,7 @@ export const SpectatorBackgroundSelection: React.FunctionComponent<IProps> = pro
         <Page>
             <PositionHeader position={InterviewPosition.Spectator} />
 
-            <Typography>Suspect's <Help entry="roles">role</Help>:</Typography>
+            <Typography>Rolle des Verdächtigen: <Help entry="roles">Rolle</Help></Typography>
             <SuspectRole role={props.role} />
 
             {message}

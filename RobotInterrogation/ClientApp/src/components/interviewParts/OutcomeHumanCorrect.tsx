@@ -13,24 +13,24 @@ export const OutcomeHumanCorrect: React.FunctionComponent<IProps> = (props) => {
         case InterviewPosition.Interviewer:
             return (
                 <Page>
-                    <P>You correctly identified the suspect as a human.</P>
-                    <Typography variant="h4">You both win.</Typography>
+                    <P>Du hast den Verdächtigen korrekt als Mensch identifiziert.</P>
+                    <Typography variant="h4">Ihr beide Gewinnt.</Typography>
                 </Page>
             );
 
         case InterviewPosition.Suspect:
             return (
                 <Page>
-                    <P>The interviewer correctly identified you as a human.</P>
-                    <Typography variant="h4">You both win.</Typography>
+                    <P>Der Interviewer hat dich korrekt als Mensch identifiziert.</P>
+                    <Typography variant="h4">Ihr beide Gewinnt.</Typography>
                 </Page>
             );
 
         default:
             return (
                 <Page>
-                    <P>The interviewer correctly identified the suspect as a human.</P>
-                    <Typography variant="h4">They both win.</Typography>
+                    <P>Der Interviewer hat dich korrekt als Mensch identifiziert.</P>
+                    <Typography variant="h4">Ihr beide Gewinnt.</Typography>
                 </Page>
             );
     }

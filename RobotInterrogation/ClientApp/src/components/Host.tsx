@@ -23,7 +23,7 @@ export const Host: React.FunctionComponent = () => {
 
     return (
         <div>
-            Please wait...
+            Bitte Warten...
         </div>
     );
 }

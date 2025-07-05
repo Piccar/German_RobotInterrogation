@@ -15,7 +15,7 @@ export const SuspectPenaltySelection: React.FunctionComponent<IProps> = props =>
     return (
         <Page>
             <PositionHeader position={InterviewPosition.Suspect} />
-            <P>Select one of the following <Help entry="penalty">penalties</Help> to <strong>use</strong> for this interview.</P>
+            <P>Wähle eine der folgenden <Help entry="penalty">Strafen</Help> aus, die du für dieses Interview <strong>anwenden</strong> möchtest.</P>
             
             <ChoiceArray options={props.options} action={props.action} />
         </Page>

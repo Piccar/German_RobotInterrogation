@@ -13,7 +13,7 @@ export const OutcomeRobotIncorrect: React.FunctionComponent<IProps> = (props) =>
         case InterviewPosition.Interviewer:
             return (
                 <Page>
-                    <P>You wrongly identified the suspect as a robot.<br />They are actually human.</P>
+                    <P>Du hast den Verdächtigen fälschlicherweise als Roboter identifiziert.<br />Tatsächlich ist er ein Mensch.</P>
                     <Typography variant="h4">You both lose.</Typography>
                 </Page>
             );
@@ -21,7 +21,7 @@ export const OutcomeRobotIncorrect: React.FunctionComponent<IProps> = (props) =>
         case InterviewPosition.Suspect:
             return (
                 <Page>
-                    <P>The Interviewer wrongly identified you as a robot.</P>
+                    <P>Der Interviewer hat dich fälschlicherweise als Roboter identifiziert.</P>
                     <Typography variant="h4">You both lose.</Typography>
                 </Page>
             );
@@ -29,7 +29,7 @@ export const OutcomeRobotIncorrect: React.FunctionComponent<IProps> = (props) =>
         default:
             return (
                 <Page>
-                    <P>The Interviewer wrongly identified the suspect as a robot.</P>
+                    <P>Der Interviewer hat den Verdächtigen fälschlicherweise als Roboter identifiziert.</P>
                     <Typography variant="h4">They both lose.</Typography>
                 </Page>
             );

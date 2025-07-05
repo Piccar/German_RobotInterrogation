@@ -17,8 +17,8 @@ interface IProps {
 
 export const SuspectBackgroundSelection: React.FunctionComponent<IProps> = props => {
     const message = props.options.length === 1
-        ? <P>You answered incorrectly. You can only choose the following <Help entry="background">background</Help>:</P>
-        : <P>You answered correctly. Select one of the following <Help entry="background">backgrounds</Help>:</P>
+        ? <P>Du hast falsch geantwortet. Du kannst nur aus dem folgenden <Help entry="background">Hintergrund</Help> wählen:</P>
+        : <P>Du hast richtig geantwortet. Wähle einen der folgenden <Help entry="background">Hintergründe</Help> aus:</P>
 
     const options = props.options.length === 1
         ? (
@@ -32,7 +32,7 @@ export const SuspectBackgroundSelection: React.FunctionComponent<IProps> = props
         <Page>
             <PositionHeader position={InterviewPosition.Suspect} />
 
-            <Typography>Your <Help entry="roles">role</Help>:</Typography>
+            <Typography>Deine <Help entry="roles">Rolle</Help>:</Typography>
             <SuspectRole role={props.role} />
 
             {message}

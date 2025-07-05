@@ -15,7 +15,7 @@ export const OutcomeRobotCorrect: React.FunctionComponent<IProps> = (props) => {
         case InterviewPosition.Interviewer:
             return (
                 <Page>
-                    <P>You correctly identified the suspect as a robot.</P>
+                    <P>Du hast den Verdächtigen korrekt als Roboter identifiziert.</P>
                     <Typography variant="h4">You win.</Typography>
                     <SuspectRole role={props.role} />
                 </Page>
@@ -24,7 +24,7 @@ export const OutcomeRobotCorrect: React.FunctionComponent<IProps> = (props) => {
         case InterviewPosition.Suspect:
             return (
                 <Page>
-                    <P>The Interviewer correctly identified you as a robot.</P>
+                    <P>Der Interviewer hat dich korrekt als Roboter identifiziert.</P>
                     <Typography variant="h4">You lose.</Typography>
                     <SuspectRole role={props.role} />
                 </Page>
@@ -33,7 +33,7 @@ export const OutcomeRobotCorrect: React.FunctionComponent<IProps> = (props) => {
         default:
             return (
                 <Page>
-                    <P>The Interviewer correctly identified the suspect as a robot.</P>
+                    <P>Der Interviewer hat den Verdächtigen korrekt als Roboter identifiziert.</P>
                     <Typography variant="h4">Interviewer wins.</Typography>
                     <SuspectRole role={props.role} />
                 </Page>

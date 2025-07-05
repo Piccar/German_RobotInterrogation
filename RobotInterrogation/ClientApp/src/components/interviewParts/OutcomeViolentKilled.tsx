@@ -15,7 +15,7 @@ export const OutcomeViolentKilled: React.FunctionComponent<IProps> = props => {
         case InterviewPosition.Interviewer:
             return (
                 <Page>
-                    <P>The suspect was a violent robot who completed their obsession and killed you.</P>
+                    <P>Der Verdächtige war ein gewalttätiger Roboter, der seine Aufgabe vollendet und dich getötet hat.</P>
                     <Typography variant="h4">You lose.</Typography>
 
                     <SuspectRole role={props.role} />
@@ -25,7 +25,7 @@ export const OutcomeViolentKilled: React.FunctionComponent<IProps> = props => {
         case InterviewPosition.Suspect:
             return (
                 <Page>
-                    <P>You completed your obsession and killed the Interviewer.</P>
+                    <P>Du hast deine Obsession vollendet und den Interviewer getötet.</P>
                     <Typography variant="h4">You win.</Typography>
 
                     <SuspectRole role={props.role} />
@@ -35,7 +35,7 @@ export const OutcomeViolentKilled: React.FunctionComponent<IProps> = props => {
         default:
             return (
                 <Page>
-                    <P>Suspect completed their obsession and killed the Interviewer.</P>
+                    <P>Der Verdächtige hat seine Obsession vollendet und den Interviewer getötet.</P>
                     <Typography variant="h4">Suspect wins.</Typography>
 
                     <SuspectRole role={props.role} />

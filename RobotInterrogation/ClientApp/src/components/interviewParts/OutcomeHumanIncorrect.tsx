@@ -14,16 +14,17 @@ export const OutcomeHumanIncorrect: React.FunctionComponent<IProps> = props => {
     switch (props.position) {
         case InterviewPosition.Interviewer:
             let winOrLose = props.role.type === 'ViolentRobot'
-                ? <Typography variant="h4">You both lose.</Typography>
-                : <Typography variant="h4">You lose.</Typography>
+                ? <Typography variant="h4">Ihr beide Verliehrt.</Typography>
+                : <Typography variant="h4">Du verlierst.</Typography>
 
             let extra = props.role.type === 'ViolentRobot'
-                ? <P>(Violent robots cannot win by being certified as human. They only win by completing their tasks.)</P>
+                ? <P>(Gewalttätige Roboter können nicht gewinnen, indem sie als menschlich zertifiziert werden. Sie gewinnen nur, indem sie ihre Aufgaben erfüllen.)</P>
+
                 : undefined;
 
             return (
                 <Page>
-                    <P>You wrongly identified the suspect as a human.<br />They are actually a robot.</P>
+                    <P>Du hast den Verdächtigen fälschlicherweise als Mensch identifiziert.<br/>Tatsächlich ist er ein Roboter.</P>
                     {winOrLose}
                     <SuspectRole role={props.role} />
                     {extra}
@@ -32,16 +33,16 @@ export const OutcomeHumanIncorrect: React.FunctionComponent<IProps> = props => {
 
         case InterviewPosition.Suspect:
             winOrLose = props.role.type === 'ViolentRobot'
-                ? <Typography variant="h4">You both lose.</Typography>
-                : <Typography variant="h4">You win.</Typography>
+                ? <Typography variant="h4">Ihr beide Verliehrt.</Typography>
+                : <Typography variant="h4">Du verlierst.</Typography>
 
             extra = props.role.type === 'ViolentRobot'
-                ? <P>(Violent robots cannot win by being certified as human. They only win by completing their tasks.)</P>
+                ? <P>(Gewalttätige Roboter können nicht gewinnen, indem sie als menschlich zertifiziert werden. Sie gewinnen nur, indem sie ihre Aufgaben erfüllen.)</P>
                 : undefined;
 
             return (
                 <Page>
-                    <P>The interviewer wrongly identified you as a human.</P>
+                    <P>Der Interviewer hat dich fälschlicherweise als Mensch identifiziert.</P>
                     {winOrLose}
                     <SuspectRole role={props.role} />
                     {extra}
@@ -50,16 +51,16 @@ export const OutcomeHumanIncorrect: React.FunctionComponent<IProps> = props => {
 
         default:
             winOrLose = props.role.type === 'ViolentRobot'
-                ? <Typography variant="h4">They both lose.</Typography>
-                : <Typography variant="h4">Suspect wins.</Typography>
+                ? <Typography variant="h4">Ihr beide verliehrt.</Typography>
+                : <Typography variant="h4">Verdächtiger Gewinnt.</Typography>
 
             extra = props.role.type === 'ViolentRobot'
-                ? <P>(Violent robots cannot win by being certified as human. They only win by completing their tasks.)</P>
+                ? <P>(Gewalttätige Roboter können nicht gewinnen, indem sie als menschlich zertifiziert werden. Sie gewinnen nur, indem sie ihre Aufgaben erfüllen.)</P>
                 : undefined;
 
             return (
                 <Page>
-                    <P>The interviewer wrongly identified the suspect as a human.</P>
+                    <P>Der Interviewer hat den Verdächtigen fälschlicherweise als Mensch identifiziert.</P>
                     {winOrLose}
                     <SuspectRole role={props.role} />
                     {extra}

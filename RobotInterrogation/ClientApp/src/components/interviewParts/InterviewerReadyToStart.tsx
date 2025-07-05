@@ -22,20 +22,21 @@ export const InterviewerReadyToStart: React.FunctionComponent<IProps> = props =>
     return (
         <Page>
             <PositionHeader position={InterviewPosition.Interviewer} />
-            <P>Ask the Suspect their name, then confirm their background.<br/>When you are ready, read them the prompt, then start the <Help entry="timer">timer</Help>.</P>
+            <P>Frage den Verdächtigen nach seinem Namen und bestätige dann seinen Hintergrund.<br/>Wenn du bereit bist, lies ihnen die Aufforderung vor und starte anschließend den <Help entry="timer">Timer</Help>.</P>
+
 
             <SortableQuestions
                 questions={props.questions}
                 sort={props.sortQuestions}
             />
 
-            <P><Help entry="penalty">Penalty</Help>: {props.penalty}</P>
-            <P>Suspect <Help entry="background">background</Help>: {props.suspectBackground}</P>
+            <P><Help entry="penalty">Strafe</Help>: {props.penalty}</P>
+            <P>Suspect <Help entry="background">Hintergrund</Help>: {props.suspectBackground}</P>
 
             <P>Prompt: {props.prompt}</P>
             
             <ActionSet>
-                <Button variant="outlined" color="primary" onClick={props.ready}>Start the Timer</Button>
+                <Button variant="outlined" color="primary" onClick={props.ready}>Starte den Timer</Button>
             </ActionSet>
         </Page>
     );

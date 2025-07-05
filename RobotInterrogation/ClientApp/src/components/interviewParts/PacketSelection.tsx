@@ -36,7 +36,8 @@ export const PacketSelection: React.FunctionComponent<IProps> = props => {
     return (
         <Page>
             <PositionHeader position={InterviewPosition.Interviewer} />
-            <P>Please select an interview <Help entry="packet">packet</Help> to use for this interview.</P>
+            <P>Bitte wähle ein Interview-<Help entry="packet">Paket</Help> für dieses Interview aus.</P>
+
 
             <List>{options}</List>
         </Page>

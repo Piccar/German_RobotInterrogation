@@ -21,7 +21,7 @@ interface IProps {
 export const InterviewFinished: React.FunctionComponent<IProps> = props => {
     const playAgain = props.position === InterviewPosition.Interviewer || props.position === InterviewPosition.Suspect
         ? <ActionSet>
-            <Button variant="outlined" onClick={props.playAgain}>Play again</Button>
+            <Button variant="outlined" onClick={props.playAgain}>Nochmal?</Button>
         </ActionSet>
         : undefined;
 
@@ -43,7 +43,7 @@ export const InterviewFinished: React.FunctionComponent<IProps> = props => {
                 return <OutcomeViolentKilled position={props.position} role={props.role} />;
 
             default:
-                return <P>Unknown outcome</P>;
+                return <P>Unbekannt</P>;
         }
     }
 

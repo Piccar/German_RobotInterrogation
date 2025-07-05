@@ -11,8 +11,8 @@ interface IProps {
 
 export const WaitPenalty: React.FunctionComponent<IProps> = props => {
     const msg = props.position === InterviewPosition.Interviewer
-        ? <P>Wait for the Suspect to choose a <Help entry="penalty">penalty</Help>.</P>
-        : <P>Wait for the Interviewer to discard a <Help entry="penalty">penalty</Help>.</P>
+        ? <P>Warte darauf, dass der Verdächtige eine <Help entry="penalty">Strafe</Help> auswählt.</P>
+        : <P>Warte darauf, dass der Interviewer eine <Help entry="penalty">Strafe</Help> verwirft.</P>
         
     return (
         <Page>

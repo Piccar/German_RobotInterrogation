@@ -7,7 +7,7 @@ export const NotYetConnected: React.FunctionComponent = () => {
     return (
         <Page>
             <Typography variant="h4" gutterBottom />
-            <P>Connecting...</P>
+            <P>Verbinde...</P>
         </Page>
     );
 }

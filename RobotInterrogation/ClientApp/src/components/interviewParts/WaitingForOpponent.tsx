@@ -23,16 +23,19 @@ export const WaitingForOpponent: React.FunctionComponent<IProps> = props => {
 
     return (
         <Page>
-            <Typography variant="h4" gutterBottom>Waiting for opponent to&nbsp;join</Typography>
+            <Typography variant="h4" gutterBottom>Warte darauf, dass der Gegenüber beitritt</Typography>
 
-            <P>Invite a friend by giving them this link:</P>
+
+            <P>Lade einen Partner ein, indem du ihm diesen Link gibst:</P>
+
 
             <P>
-                <Link target="_blank" className="gameLink" href={fullLocation}>{fixedLocation}<wbr/><span className="gameLink__focus">{detailLocation}</span></Link>
+                https://<Link target="_blank" className="gameLink" href={fullLocation}>{fixedLocation}<wbr/><span className="gameLink__focus">{detailLocation}</span></Link>
             </P>
 
             <P>
-                <strong>Don't</strong> open the link yourself, or you will become your own opponent.
+                Öffne den Link <strong>nicht</strong> selbst, sonst wirst du dein eigener Gegner.
+
             </P>
         </Page>
     );

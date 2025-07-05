@@ -13,7 +13,7 @@ export const WaitPacketSelection: React.FunctionComponent<IProps> = props => {
     return (
         <Page>
             <PositionHeader position={props.position} />
-            <P>Wait for the Interviewer to select an interview <Help entry="packet">packet</Help>.</P>
+            <P>Warte darauf, dass der Interviewer ein Interview-<Help entry="packet">Paket</Help> auswählt.</P>
         </Page>
     );
 }

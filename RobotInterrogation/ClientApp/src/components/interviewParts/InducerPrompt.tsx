@@ -22,20 +22,21 @@ export const InducerPrompt: React.FunctionComponent<IProps> = props => {
 
             <PacketDisplay packet={props.packet} />
 
-            <P>Ask the Suspect a question based on the sequence below, then click below to administer the <Help entry="inducer">inducer</Help>, revealing the Suspect's <Help entry="roles">role</Help> to them.</P>
+            <P>Stelle dem Verdächtigen eine Frage basierend auf der untenstehenden Sequenz und klicke anschließend unten, um das <Help entry="inducer">Induktionsmittel</Help> zu verabreichen. Dadurch wird dem Verdächtigen seine <Help entry="roles">Rolle</Help> offenbart.</P>
+
             
             <InterferenceSolution solution={props.solution} />
 
             <Typography component="div">
-                Example questions:
+                Beispielfragen:
                 <ul>
-                    <li>What letters come between A and D?</li>
-                    <li>What letter follows B?</li>
+                    <li>Welche Buchstaben stehen zwischen A und D?</li>
+                    <li>Welcher Buchstabe folgt auf B?</li>
                 </ul>
             </Typography>
             
             <ActionSet>
-                <Button variant="outlined" onClick={() => props.continue()}>Continue</Button>
+                <Button variant="outlined" onClick={() => props.continue()}>Weiter</Button>
             </ActionSet>
         </Page>
     )

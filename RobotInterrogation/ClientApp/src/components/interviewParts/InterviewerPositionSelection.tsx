@@ -18,12 +18,13 @@ export const InterviewerPositionSelection: React.FunctionComponent<IProps> = pro
             <PositionHeader position={InterviewPosition.Interviewer} />
 
             <P>
-                Select your <Help entry="positions">position</Help> for this interview:
+                Wähle deine <Help entry="positions">Position</Help> für dieses Interview:
+
             </P>
 
             <Choice>
-                <Button onClick={props.stay}>Remain as the Interviewer</Button>
-                <Button onClick={props.swap}>Switch positions and become the Suspect</Button>
+                <Button onClick={props.stay}>Als Interviewer bleiben</Button>
+                <Button onClick={props.swap}>Position wechseln und Verdächtiger werden</Button>
             </Choice>
         </Page>
     );

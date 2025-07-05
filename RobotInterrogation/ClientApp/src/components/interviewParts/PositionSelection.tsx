@@ -13,7 +13,7 @@ export const PositionSelection: React.FunctionComponent<IProps> = props => {
     return (
         <Page>
             <PositionHeader position={props.position} />
-            <P>Waiting for the Interviewer to confirm or swap <Help entry="positions">positions</Help>.</P>
+            <P>Warte darauf, dass der Interviewer die <Help entry="positions">Positionen</Help> bestätigt oder wechselt.</P>
         </Page>
     );
 }

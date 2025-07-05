@@ -14,22 +14,23 @@ interface IProps {
 
 export const SuspectReadyToStart: React.FunctionComponent<IProps> = props => {
     const robotPrompt = props.role.type === 'ViolentRobot'
-        ? <P>You must complete 2 of the 3 tasks listed below, <em>and then wait 10 seconds</em> before you can kill the Interviewer.</P>
+        ? <P>Du musst 2 der 3 unten aufgeführten Aufgaben erledigen und <em>danach 10 Sekunden warten</em>, bevor du den Interviewer töten kannst.</P>
         : props.role.type === 'PatientRobot'
-            ? <P>You must perform the penalty each time you violate your vulnerability.</P>
+            ? <P>Du musst die Strafe jedes Mal ausführen, wenn du deine Verwundbarkeit verletzt.</P>
             : undefined;
 
     return (
         <Page>
             <PositionHeader position={InterviewPosition.Suspect} />
-            <P>Once they start the <Help entry="timer">timer</Help>, the Interviewer will ask you a series of <Help entry="questions">questions</Help> to try to determine whether you are a human or a robot.</P>
+            <P>Sobald sie den <Help entry="timer">Timer</Help> starten, wird der Interviewer dir eine Reihe von <Help entry="questions">Fragen</Help> stellen, um zu versuchen, festzustellen, ob du ein Mensch oder ein Roboter bist.</P>
+
 
             {robotPrompt}
 
             <SuspectRole role={props.role} />
             
-            <P><Help entry="penalty">Penalty</Help>: {props.penalty}</P>
-            <P>Suspect <Help entry="background">background</Help>: {props.suspectBackground}</P>
+            <P><Help entry="penalty">Strafe</Help>: {props.penalty}</P>
+            <P>Verdächtiger <Help entry="background">hintergrund</Help>: {props.suspectBackground}</P>
         </Page>
     );
 }

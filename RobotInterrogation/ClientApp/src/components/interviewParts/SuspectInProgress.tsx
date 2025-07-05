@@ -21,36 +21,36 @@ export const SuspectInProgress: React.FunctionComponent<IProps> = props => {
     const terminate = props.role.type === 'ViolentRobot'
         ? (
             <ActionSet>
-                <Button variant="outlined" color="secondary" onClick={props.terminateInterviewer}>Kill interviewer</Button>
+                <Button variant="outlined" color="secondary" onClick={props.terminateInterviewer}>Töte den Interviewer</Button>
             </ActionSet>
         )
         : undefined;
     
     const robotPrompt = props.role.type === 'ViolentRobot'
         ? <>
-            <P>You must complete 2 of the 3 tasks listed below, <em>and then wait 10 seconds</em> before you can kill the Interviewer.</P>
-            <P>If you cannot kill the Interviewer before finishing answering their final question, you must visibly malfunction.</P>
+            <P>Du musst 2 der 3 unten aufgeführten Aufgaben erledigen und <em>danach 10 Sekunden warten</em>, bevor du den Interviewer töten kannst.</P>
+            <P>Wenn du den Interviewer nicht töten kannst, bevor du seine letzte Frage beantwortet hast, musst du sichtbar Fehlfunktionen zeigen.</P>
         </>
         : props.role.type === 'PassiveRobot'
-            ? <P>You must perform the penalty each time you violate your vulnerability.</P>
+            ? <P>Du musst die Strafe jedes Mal ausführen, wenn du deine Verwundbarkeit verletzt.</P>
             : undefined;
 
     const [elapsed, setElapsed] = useState(false);
 
     const elapsedPrompt = elapsed
-        ? <P>The interviewer can ask one final question.</P>
+        ? <P>Der Interviewer kann eine letzte Frage stellen.</P>
         : <P/>;
 
     return <Page>
         <PositionHeader position={InterviewPosition.Suspect} />
-        <P>Answer the Interviewer's questions, try to convince them that you are human.</P>
+        <P>Beantworte die Fragen des Interviewers und versuche, ihn davon zu überzeugen, dass du ein Mensch bist.</P>
         {robotPrompt}
 
         <SuspectRole role={props.role} />
         
-        <P>Penalty: {props.penalty}</P>
+        <P>Strafe: {props.penalty}</P>
         
-        <P>Your background: {props.suspectBackground}</P>
+        <P>Dein Hintergrund: {props.suspectBackground}</P>
 
         <Countdown
             duration={props.duration}

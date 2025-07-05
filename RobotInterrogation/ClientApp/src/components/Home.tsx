@@ -10,13 +10,12 @@ export const Home: React.FunctionComponent = () => {
         <Page>
             <Typography variant="h2" gutterBottom>Robot Interrogation</Typography>
 
-            <P>Can you tell if someone is secretly a robot? This is an online version of <A href="https://robots.management" target="_blank">Inhuman Conditions</A>, a game by Tommy Maranges and Cory O'Brien.</P>
+            <P>Kannst du herrausfinden wer ein Roboter ist und wer nicht? Dies ist die deutsche online Version von <A href="https://robots.management" target="_blank">Inhuman Conditions</A>, ein Spiel von Tommy Maranges und Cory O'Brien.</P>
 
-            <P>Play with a friend over video chat, or in the same room.</P>
 
             <ActionSet>
                 <Button variant="outlined" component={Link} to="/about">Information</Button>
-                <Button variant="outlined" color="primary" component={Link} to="/host">Start a game</Button>
+                <Button variant="outlined" color="primary" component={Link} to="/host">Starten</Button>
             </ActionSet>
         </Page>
     );

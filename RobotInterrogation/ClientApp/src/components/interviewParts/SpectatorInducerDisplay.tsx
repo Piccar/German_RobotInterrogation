@@ -29,13 +29,13 @@ export const SpectatorInducerDisplay: React.FunctionComponent<IProps> = props =>
 
             <PacketDisplay packet={props.packet} />
 
-            <Typography>The <Help entry="inducer">inducer</Help> {correctTense} administered.<br/>Suspect's <Help entry="roles">role</Help>:</Typography>
+            <Typography>Das <Help entry="inducer">Induktionsmittel</Help> wurde {correctTense} verabreicht.<br/>Rolle des Verdächtigen: <Help entry="roles">Rolle</Help>:</Typography>
             <SuspectRole role={props.role} />
 
             {props.solution ? <InterferenceSolution solution={props.solution} /> : undefined}
             {props.connections !== undefined && props.content !== undefined ? <InterferencePattern connections={props.connections} content={props.content} /> : undefined}
 
-            <P>The Suspect will now answer the Interviewer's question.<br />If answered correctly, the Suspect will get to choose their <Help entry="background">background</Help>.</P>
+            <P>Der Verdächtige wird nun die Frage des Interviewers beantworten.<br />Wenn er richtig antwortet, darf er seinen <Help entry="background">Hintergrund</Help> auswählen.</P>
         </Page>
     )
 }
