@@ -13,10 +13,10 @@ export const PositionHeader: React.FC<Props> = props => {
 function getText(position: InterviewPosition) {
     switch (position) {
         case InterviewPosition.Interviewer:
-            return 'You are the interviewer';
+            return 'Du bist der Interviewer';
         case InterviewPosition.Suspect:
-            return 'You are the suspect';
+            return 'Du bist der Verdächtige';
         default:
-            return 'You are a spectator';
+            return 'Du bist ein Zuschauer';
     }
 }

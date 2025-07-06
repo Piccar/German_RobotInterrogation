@@ -9,6 +9,7 @@ interface IProps {
     duration: number;
     onElapsed?: () => void;
 }
+var triggerbool = false;
 
 const useStyles = makeStyles(theme => ({
     wrapper: {
@@ -84,7 +85,8 @@ export const Countdown: React.FC<IProps> = ({ duration, onElapsed }) => {
                 }
 
                 // 🔔 Countdown beendet
-                if (newVal <= 0) {
+                if (newVal <= 0 && triggerbool == false) {
+                    triggerbool=true;
                     clearInterval(intervalRef.current!);
                     intervalRef.current = null;
 
@@ -97,7 +99,7 @@ export const Countdown: React.FC<IProps> = ({ duration, onElapsed }) => {
                     return 0;
                 }
 
-                return newVal;
+                return Math.max(newVal, 0);
             });
         }, 1000);
 
