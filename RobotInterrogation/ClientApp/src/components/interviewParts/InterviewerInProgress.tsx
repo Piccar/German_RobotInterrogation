@@ -62,7 +62,7 @@ export const InterviewerInProgress: React.FunctionComponent<IProps> = props => {
                 variant="outlined"
                 onClick={isRobot}
             >
-                Verdächtiger ist ein Mensch Roboter
+                Verdächtiger ist ein Roboter
             </Button>
         </ActionSet>
     </Page>
