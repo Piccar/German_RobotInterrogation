@@ -9,7 +9,7 @@ export const Disconnected: React.FunctionComponent = () => {
     return (
         <Page>
             <Typography variant="h4" gutterBottom />
-            <P>Du hast die Verbindung zum Interview verlohren.</P>
+            <P>Du hast die Verbindung zum Interview verloren.</P>
             <P>Überprüfe die Internet Verbindung.</P>
 
             <ActionSet>
