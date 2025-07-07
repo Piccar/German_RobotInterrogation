@@ -31,7 +31,7 @@ export const InterviewerReadyToStart: React.FunctionComponent<IProps> = props =>
             />
 
             <P><Help entry="penalty">Strafe</Help>: {props.penalty}</P>
-            <P>Suspect <Help entry="background">Hintergrund</Help>: {props.suspectBackground}</P>
+            <P>Verdächtiger <Help entry="background">Hintergrund</Help>: {props.suspectBackground}</P>
 
             <P>Prompt: {props.prompt}</P>
             

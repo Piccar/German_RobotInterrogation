@@ -37,7 +37,9 @@ export const About: React.FunctionComponent = () => {
 
             <P>Dies ist die deutsche Onlineversion von <A href="https://robots.management" target="_blank">Inhuman Conditions</A>, ein Spiel von Tommy Maranges und Cory O'Brien, welches gratis erreichbar ist unter <A href="">Creative Commons license BY-NCA-SA-4.0</A>.</P>
             
-            <P>Inhuman Conditions' <A href="https://www.dropbox.com/s/9ledq11mc3nd15f/Inhuman%20Conditions%20Rulebooks%20%28Public%20File%29.pdf?dl=0" target="_blank">Regeln sind hier verfügbar</A>. Ließ sie bevor Ihr spielt.</P>
+            <P>Inhuman Conditions' <A href="https://www.dropbox.com/s/9ledq11mc3nd15f/Inhuman%20Conditions%20Rulebooks%20%28Public%20File%29.pdf?dl=0" target="_blank">Regeln sind hier verfügbar</A>. Alternativ gibt es <A href="https://www.youtube.com/watch?v=EBDX7-cTJZ4" target="_blank">hier ein Video</A></P>
+
+
 
             <P>Wenn du interessiert bist, kannst du <A href="https://github.com/Piccar/RobotInterrogation" target="_blank">den Quellcode</A> dieses Projekts auf GitHub ansehen. Melden dich bei Problemen dort.</P>
 

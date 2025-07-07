@@ -23,7 +23,7 @@ export const InterviewerPositionSelection: React.FunctionComponent<IProps> = pro
             </P>
 
             <Choice>
-                <Button onClick={props.stay}>Als Interviewer bleiben</Button>
+                <Button onClick={props.stay}>Als Interviewer starten</Button>
                 <Button onClick={props.swap}>Position wechseln und Verdächtiger werden</Button>
             </Choice>
         </Page>

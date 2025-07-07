@@ -79,56 +79,62 @@ function getContent(entry: Entry, className: string): JSX.Element {
     switch (entry) {
         case 'positions':
             return <Typography className={className} component="div">
-                <p>The Interviewer must try to determine whether the Suspect is a human or a robot.</p>
-                
-                <p>The Suspect should try to convince the Interviewer that they are human, regardless of their true nature.</p>
+                <p>Der Interviewer muss versuchen herauszufinden, ob der Verdächtige ein Mensch oder ein Roboter ist.</p>
+
+                <p>Der Verdächtige sollte versuchen, den Interviewer davon zu überzeugen, dass er ein Mensch ist – unabhängig von seiner wahren Identität.</p>
+
             </Typography>
 
         case 'roles':
             return <Typography className={className} component="div">
-                <p>A human Suspect has nothing to hide, and no restrictions on their behaviour.</p>
-                <p>A patient robot has a restriction, something they cannot mention.</p>
-                <p>A violent robot has an obsession, and must complete tasks to fulfil this obsession and allow them to kill the Interviewer.</p>
+                <p>Ein menschlicher Verdächtiger hat nichts zu verbergen und keine Einschränkungen in seinem Verhalten.</p>
+                <p>Ein geduldiger Roboter hat eine Einschränkung – etwas, das er nicht erwähnen darf oder kann.</p>
+                <p>Ein gewalttätiger Roboter muss zwei von drei Aufgaben erfüllen, um den Interviewer töten zu können.</p>
+
             </Typography>
 
         case 'penalty':
             return <Typography className={className} component="div">
-                <p>The penalty is a suspicious action that robots may perform under stress during the interview.</p>
-                
-                <p>Patient robots must perform the penalty once for each time they violate their restriction.</p>
-                <p>Violent robots may perform the penalty twice as part of their de-programming.</p>
-                <p>Human suspects should avoid performing the penalty, as this may make the Investigator think that they are a robot.</p>
+                <p>Die Strafe ist eine verdächtige Handlung, die Roboter unter Stress während des Interviews ausführen könnten.</p>
+
+                <p>Geduldige Roboter müssen die Strafe jedes Mal ausführen, wenn sie ihre Einschränkung verletzen.</p>
+                <p>Gewalttätige Roboter dürfen die Strafe zweimal im Rahmen ihrer Deprogrammierung ausführen.</p>
+                <p>Menschliche Verdächtige sollten die Strafe vermeiden, da dies den Interviewer glauben lassen könnte, dass sie ein Roboter sind.</p>
             </Typography>
 
         case 'packet':
             return <Typography className={className} component="div">
-                <p>An interview packet is a collection of question prompts and robot roles that relate to them.</p>
-                <p>It forms the topic of the interview.</p>
+                <p>Ein Interview-Paket ist eine Sammlung von Frageaufforderungen und dazugehörigen Roboterrollen.</p>
+                <p>Es bildet das Thema des Interviews.</p>
             </Typography>
 
         case 'inducer':
             return <Typography className={className} component="div">
-                <p>The Interviewer asks the Suspect a question based on a simple diagram, and then administers the inducer. This reveals the Suspect's role to them.</p>
-                <p>Robots will see the same diagram as the Interviewer, but need time to read the details of their role.</p>
-                <p>Humans will need to solve more complicated diagram to answer the question.</p>
+                <p>Der Interviewer stellt dem Verdächtigen eine Frage basierend auf einem einfachen Diagramm und verabreicht anschließend das Induktionsmittel. Dadurch wird dem Verdächtigen seine Rolle offenbart.</p>
+                <p>Roboter sehen dasselbe Diagramm wie der Interviewer, benötigen jedoch Zeit, um die Details ihrer Rolle zu lesen.</p>
+                <p>Menschen müssen ein komplizierteres Diagramm lösen, um die Frage zu beantworten.</p>
+
             </Typography>
 
         case 'background':
             return <Typography className={className} component="div">
-                <p>Backgrounds provide the Suspect with a biographical detail to help them improvise a character.</p>
-                <p>The Investigator and the Suspect should act as if the background really is true.</p>
+                <p>Hintergründe geben dem Verdächtigen ein biografisches Detail, das ihm hilft, eine Figur zu improvisieren.</p>
+                <p>Der Interviewer und der Verdächtige sollten so tun, als wäre der Hintergrund wirklich wahr.</p>
+
             </Typography>
 
         case 'questions':
             return <Typography className={className} component="div">
-                <p>The questions in an interview packet relate directly to the patient and violent robot roles in that packet.</p>
-                <p>The Investigator can deviate as much as they like, but these questions should help draw out patterns of robot behavior.</p>
+                <p>Die Fragen in einem Interview-Paket beziehen sich direkt auf die geduldigen und gewalttätigen Roboterrollen in diesem Paket.</p>
+                <p>Der Interviewer kann so stark vom Text abweichen, wie er möchte, aber diese Fragen sollen helfen, typische Verhaltensmuster von Robotern zu erkennen.</p>
+
             </Typography>
 
         case 'timer':
             return <Typography className={className} component="div">
-                <p>The Interviewer has 5 minutes to question the Suspect. Once the time has elapsed, they may ask one final question.</p>
-                <p>The Interviewer can conclude that the Suspect is a robot at any time, but must wait until the time has elapsed before they can conclude that the Suspect is a human.</p>
+                <p>Der Interviewer hat 5 Minuten Zeit, um den Verdächtigen zu befragen. Sobald die Zeit abgelaufen ist, darf er eine letzte Frage stellen.</p>
+                <p>Der Interviewer kann jederzeit zu dem Schluss kommen, dass der Verdächtige ein Roboter ist, muss jedoch warten, bis die Zeit abgelaufen ist, um ihn als Mensch einzustufen.</p>
+
             </Typography>
     }
 }

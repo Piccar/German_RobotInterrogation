@@ -73,7 +73,7 @@ export const InterviewQuestion = React.forwardRef<HTMLDivElement, IProps>((props
     const examples = props.question.examples.map((q, i) => <Typography component="li" className={classes.example} key={i}>{q}</Typography>);
     const secondary = props.question.isPrimary
         ? undefined
-        : <Typography variant="body2" className={classes.secondary} color="textSecondary">while fulfilling another prompt</Typography>
+        : <Typography variant="body2" className={classes.secondary} color="textSecondary">während eine andere Frage beantwortet wird</Typography>
 
     const sortUp = props.sortUp
         ? <Button
@@ -94,15 +94,15 @@ export const InterviewQuestion = React.forwardRef<HTMLDivElement, IProps>((props
     return (
         <Card className={rootClasses} ref={ref} variant="outlined">
             <CardContent>
-                <Typography variant="body2" className={classes.prefix} color="textSecondary">Suspect must</Typography>
+                <Typography variant="body2" className={classes.prefix} color="textSecondary">Verdächtiger muss</Typography>
                 {secondary}
                 <Typography className={classes.challenge}>
-                    {props.question.challenge}, e.g.
+                    {props.question.challenge}, z.B.
                 </Typography>
                 <ul className={classes.examples}>
                     {examples}
                 </ul>
-                <Typography variant="body2" className={classes.suffix} color="textSecondary">to be human</Typography>
+                <Typography variant="body2" className={classes.suffix} color="textSecondary">um als Mensch zugelten</Typography>
                 {sortUp}
                 {sortDown}
             </CardContent>
