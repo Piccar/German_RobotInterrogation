@@ -14,7 +14,7 @@ Das Spiel kann online auf meiner Website gespielt werden:
 Stelle sicher, dass Docker auf deinem System installiert ist.
 
 ```bash
-git clone https://github.com/dein-nutzername/RobotInterrogation
+git clone https://github.com/Piccar/German_RobotInterrogation
 cd RobotInterrogation
 sudo docker build . -t robot
 sudo docker run --name robot -p 127.0.0.1:8080:8080 robot
@@ -60,7 +60,7 @@ You can play the game directly here:
 Make sure Docker is installed on your system.
 
 ```bash
-git clone https://github.com/your-username/RobotInterrogation
+git clone https://github.com/Piccar/German_RobotInterrogation
 cd RobotInterrogation
 sudo docker build . -t robot
 sudo docker run --name robot -p 127.0.0.1:8080:8080 robot
